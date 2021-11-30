@@ -30,11 +30,11 @@ export const AuthProvider = ({ children }: IAuthProviderProps) => {
 
   useEffect(() => {
     async function getPersonFromAsyncStorage() {
-      const person = JSON.parse((await AsyncStorage.getItem("person")) || "");
+      const person = JSON.parse((await AsyncStorage.getItem("person")) || "{}");
 
       if (person?.id !== null) {
         setPerson(person);
-      }
+      }      
     }
 
     getPersonFromAsyncStorage();
