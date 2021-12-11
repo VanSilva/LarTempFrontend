@@ -3,9 +3,14 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f0f2",
     alignItems: "center",
     justifyContent: "center",
+  },
+
+  imagem: {
+    width: 150,
+    height: 150,
   },
 
   scrollView: {
@@ -28,7 +33,8 @@ export const styles = StyleSheet.create({
   },
 
   castrationText: {
-    fontSize: 20,
+    fontFamily: 'montserrat-regular',
+    fontSize: 30,
   },
 
   buttons: {

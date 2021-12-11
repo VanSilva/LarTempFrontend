@@ -5,6 +5,7 @@ import {
   ScrollView,
   Text,
   View,
+  Image,
 } from "react-native";
 import { useAuth } from "../../../contexts/auth";
 import { api } from "../../../services/api";
@@ -38,6 +39,7 @@ export function CastrationsList() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../../assets/logo_animal.png')} />
       <ScrollView style={styles.scrollView}>
         <View style={styles.castrations}>
           {castrations?.map((castration) => (
