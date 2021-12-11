@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   View,
+  Image,
   ToastAndroid,
 } from "react-native";
 import { api } from "../../services/api";
@@ -68,39 +69,40 @@ export function SignUp(props: IProps) {
 
   return (
     <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../assets/logo_animal.png')} />
+      
       <View style={styles.formContainer}>
-        <Text style={styles.title}>Cadastro</Text>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>Nome</Text>
           <TextInput
             value={name}
             onChangeText={(text) => setName(text)}
+            placeholder={"Nome"}
             style={styles.input}
           />
         </View>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>E-mail</Text>
           <TextInput
             value={email}
             onChangeText={(text) => setEmail(text)}
+            placeholder={"E-mail"}
             style={styles.input}
           />
         </View>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>Senha</Text>
           <TextInput
             value={password}
             onChangeText={(text) => setPassword(text)}
+            placeholder={"Senha"}
             style={styles.input}
             secureTextEntry
           />
         </View>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>Cidade</Text>
+          {/*<Text style={styles.label}>Cidade</Text> */}
           <Picker
             style={styles.input}
             selectedValue={city}
@@ -113,7 +115,7 @@ export function SignUp(props: IProps) {
         </View>
 
         <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-          <Text style={styles.buttonText}>Cadastre-se</Text>
+          <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
       </View>
     </View>
