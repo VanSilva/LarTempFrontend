@@ -1,7 +1,7 @@
 import { Picker } from "@react-native-picker/picker";
 import React, { useEffect, useState } from "react";
 
-import { Text, ToastAndroid, View } from "react-native";
+import { Text, ToastAndroid, View, Image } from "react-native";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { useAuth } from "../../contexts/auth";
 import { api } from "../../services/api";
@@ -89,14 +89,34 @@ function UpdatePerson() {
 
   return (
     <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../assets/logo_animal.png')} />
       <View style={styles.formContainer}>
-        <Text style={styles.title}>Editar</Text>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>Nome</Text>
           <TextInput
             value={name}
             onChangeText={(text) => setName(text)}
+            placeholder={"Nome"}
+            style={styles.input}
+          />
+        </View>
+
+        <View style={styles.inputBlock}>
+          <TextInput
+            value={password}
+            onChangeText={(text) => setPassword(text)}
+            placeholder={"Senha"}
+            style={styles.input}
+            secureTextEntry
+          />
+        </View>
+
+        <View style={styles.inputBlock}>
+          <TextInput
+            value={confirmPassword}
+            onChangeText={(text) => setConfirmPassword(text)}
+            secureTextEntry
+            placeholder={"Confirmar Senha"}
             style={styles.input}
           />
         </View>
@@ -112,26 +132,6 @@ function UpdatePerson() {
               <Picker.Item key={city._id} label={city.name} value={city._id} />
             ))}
           </Picker>
-        </View>
-
-        <View style={styles.inputBlock}>
-          <Text style={styles.label}>Senha</Text>
-          <TextInput
-            value={password}
-            onChangeText={(text) => setPassword(text)}
-            style={styles.input}
-            secureTextEntry
-          />
-        </View>
-
-        <View style={styles.inputBlock}>
-          <Text style={styles.label}>Confirmar senha</Text>
-          <TextInput
-            value={confirmPassword}
-            onChangeText={(text) => setConfirmPassword(text)}
-            secureTextEntry
-            style={styles.input}
-          />
         </View>
 
         <TouchableOpacity style={styles.button} onPress={handleUpdate}>
