@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Alert, Text, ToastAndroid, View } from "react-native";
+import { Alert, Text, ToastAndroid, View, Image } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useAuth } from "../../contexts/auth";
 import { api } from "../../services/api";
@@ -54,9 +54,10 @@ function DeletePerson() {
 
   return (
     <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../assets/logo_animal.png')} />
       <View style={styles.formContainer}>
         <TouchableOpacity style={styles.button} onPress={handleDeletePress}>
-          <Text style={styles.buttonText}>Apagar Conta</Text>
+          <Text style={styles.buttonText}>Excluir Conta</Text>
         </TouchableOpacity>
       </View>
     </View>
