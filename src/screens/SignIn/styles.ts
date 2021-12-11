@@ -1,11 +1,17 @@
 import { StyleSheet } from "react-native";
+import { block } from "react-native-reanimated";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f0f2",
     alignItems: "center",
     justifyContent: "center",
+  },
+
+  imagem: {
+    width: 150,
+    height: 150,
   },
 
   formContainer: {
@@ -15,6 +21,7 @@ export const styles = StyleSheet.create({
   },
 
   title: {
+    fontFamily: 'montserrat-extralight',
     fontSize: 25,
     textAlign: 'center',
     marginBottom: 40,
@@ -26,13 +33,20 @@ export const styles = StyleSheet.create({
   },
 
   label: {
-    fontSize: 17,
+    fontFamily: 'montserrat-extralight',
+    fontSize: 20,
   },
 
   input: {
+    fontFamily: 'montserrat-extralight',
+    fontSize: 20,
+    borderBottomColor: '#5c5a5c',
+    borderBottomWidth: 2,
+    backgroundColor: "#f2f0f2",
     width: '100%',
-    height: 35,
-    borderWidth: 1,
+    height: 45,
+    borderLeftColor: "#5c5a5c",
+    borderBottomEndRadius: 1,
     borderColor: '#000',
     marginTop: 2,
   },
@@ -40,14 +54,17 @@ export const styles = StyleSheet.create({
   button: {
     marginTop: 15,
     width: '100%',
-    backgroundColor: '#000',
-
+    backgroundColor: '#eda75c',
+    borderColor: "#8c6a42",
+    borderWidth: 2,
+    borderRadius: 10,
   },
 
   buttonText: {
-    color: '#fff',
+    fontFamily: 'montserrat-regular',
+    color: '#5c5a5c',
     fontSize: 20,
     textAlign: "center",
-    padding: 5,
+    padding: 8,
   }
 });

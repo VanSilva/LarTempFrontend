@@ -6,6 +6,7 @@ import {
   ToastAndroid,
   TouchableOpacity,
   View,
+  Image,
 } from "react-native";
 import { useAuth } from "../../contexts/auth";
 import { api } from "../../services/api";
@@ -58,23 +59,24 @@ export function SignIn(props: IProps) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.formContainer}>
-        <Text style={styles.title}>Entrar</Text>
-
+      <Image style={styles.imagem} source={require('../../../assets/logo_animal.png')} />
+        <View style={styles.formContainer}>
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>E-mail</Text>
+          {/*<Text style={styles.label}>E-mail</Text> */}
           <TextInput
             value={email}
             onChangeText={(text) => setEmail(text)}
+            placeholder={"E-mail"}
             style={styles.input}
           />
         </View>
 
         <View style={styles.inputBlock}>
-          <Text style={styles.label}>Senha</Text>
+          {/*<Text style={styles.label}>Senha</Text> */}
           <TextInput
             value={password}
             onChangeText={(text) => setPassword(text)}
+            placeholder={"Senha"}
             style={styles.input}
             secureTextEntry
           />
