@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
   ToastAndroid,
+  Image,
 } from "react-native";
 import { useAuth } from "../../../contexts/auth";
 
@@ -70,14 +71,14 @@ export function VaccineRegister(props: IProps) {
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../../assets/logo_animal.png')} />
         <View style={styles.formContainer}>
-          <Text style={styles.title}>Cadastro</Text>
 
           <View style={styles.inputBlock}>
-            <Text style={styles.label}>Nome</Text>
             <TextInput
               value={description}
               onChangeText={(text) => setDescription(text)}
+              placeholder={"Vacina"}
               style={styles.input}
             />
           </View>

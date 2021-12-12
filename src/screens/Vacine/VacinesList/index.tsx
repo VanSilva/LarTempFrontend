@@ -105,11 +105,12 @@ export function VacinesList(props: IProps) {
   return (
     <>
       <View style={styles.registerButtonContainer}>
+      <Image style={styles.imagem} source={require('../../../../assets/logo_animal.png')} />
         <TouchableOpacity
           style={styles.registerButton}
           onPress={handleNavigateToRegister}
         >
-          <Text style={styles.registerButtonText}>Cadastrar</Text>
+          <Text style={styles.registerButtonText}>Cadastrar Vacina</Text>
         </TouchableOpacity>
       </View>
       <SafeAreaView style={styles.container}>
@@ -123,14 +124,14 @@ export function VacinesList(props: IProps) {
                     style={styles.button}
                     onPress={() => handleNavigateToUpdate(vaccine._id)}
                   >
-                    <Ionicons name="md-pencil" size={30} color="black" />
+                    <Ionicons name="md-pencil" size={30} style={styles.icons} />
                   </TouchableOpacity>
 
                   <TouchableOpacity
                     style={styles.button}
                     onPress={() => callConfirmationDialog(vaccine._id)}
                   >
-                    <Ionicons name="md-trash" size={30} color="red" />
+                    <Ionicons name="md-trash" size={30} style={styles.icons} />
                   </TouchableOpacity>
                 </View>
               </View>
