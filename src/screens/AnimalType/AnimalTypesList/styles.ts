@@ -3,9 +3,15 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f0f2",
     alignItems: "center",
     justifyContent: "center",
+  },
+
+  imagem: {
+    alignSelf: "center", 
+    width: 150,
+    height: 150,
   },
 
   scrollView: {
@@ -28,6 +34,7 @@ export const styles = StyleSheet.create({
   },
 
   animalTypeText: {
+    fontFamily: 'montserrat-regular',
     fontSize: 20,
   },
 
@@ -57,8 +64,11 @@ export const styles = StyleSheet.create({
 
   registerButton: {
     marginTop: 15,
-    width: "100%",
-    backgroundColor: "#000",
+    width: '100%',
+    backgroundColor: '#eda75c',
+    borderColor: "#8c6a42",
+    borderWidth: 2,
+    borderRadius: 10,
   },
 
   registerButtonContainer: {
@@ -67,9 +77,14 @@ export const styles = StyleSheet.create({
   },
 
   registerButtonText: {
-    color: "#fff",
+    fontFamily: 'montserrat-regular',
+    color: '#5c5a5c',
     fontSize: 20,
     textAlign: "center",
-    padding: 5,
+    padding: 8,
+  },
+
+  icons: {
+    color: "#8c6a42",
   },
 });

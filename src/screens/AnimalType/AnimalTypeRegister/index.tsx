@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
   ToastAndroid,
+  Image,
 } from "react-native";
 import { useAuth } from "../../../contexts/auth";
 
@@ -67,20 +68,19 @@ export function AnimalTypeRegister(props: IProps) {
       </TouchableOpacity>
     </View>
       <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../../assets/logo_animal.png')} />
         <View style={styles.formContainer}>
-          <Text style={styles.title}>Cadastro</Text>
-
           <View style={styles.inputBlock}>
-            <Text style={styles.label}>Nome</Text>
             <TextInput
               value={description}
               onChangeText={(text) => setDescription(text)}
+              placeholder={"Raça"}
               style={styles.input}
             />
           </View>
 
           <TouchableOpacity style={styles.button} onPress={handleRegister}>
-            <Text style={styles.buttonText}>Cadastrar</Text>
+            <Text style={styles.buttonText}>Cadastrar Raça</Text>
           </TouchableOpacity>
         </View>
       </View>
