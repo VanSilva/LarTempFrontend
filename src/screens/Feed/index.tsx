@@ -374,7 +374,7 @@ function Feed() {
                         : handleLike(post._id)
                     }
                   >
-                    <Ionicons name="md-heart" size={32} color="red" />
+                    <Ionicons name="md-heart" size={35} color="red" />
                   </TouchableOpacity>
                 </View>
 

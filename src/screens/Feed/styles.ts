@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#8c6a42",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -15,8 +15,11 @@ export const styles = StyleSheet.create({
   },
 
   image: {
-    width: "50%",
+    width: "80%",
     height: 200,
+    borderColor: "#eda75c",
+    borderWidth: 5,
+    borderRadius: 20,
   },
 
   scrollView: {
@@ -29,14 +32,16 @@ export const styles = StyleSheet.create({
   },
 
   post: {
-    backgroundColor: "#F4A460",
+    backgroundColor: "#eda75c",
     padding: 10,
     marginTop: 10,
+    borderRadius: 20,
   },
 
   content: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f0f2",
     padding: 10,
+    borderRadius: 20,
   },
 
   title: {
@@ -46,39 +51,46 @@ export const styles = StyleSheet.create({
   },
 
   titleText: {
+    fontFamily: 'montserrat-regular',
     fontWeight: "bold",
     fontSize: 22,
     width: "75%",
   },
 
   dateText: {
+    fontFamily: 'montserrat-regular',
     width: "25%",
   },
 
   defaultText: {
-    marginTop: 2,
+    fontFamily: 'montserrat-extralight',
     fontSize: 16,
   },
 
   reaction: {
+    alignSelf: "center",
     flexDirection: "row",
     alignItems: "center",
   },
 
   reactionText: {
+    fontFamily: 'montserrat-regular',
     marginTop: 2,
-    fontSize: 16,
+    fontSize: 12,
   },
 
   qtdText: {
+    fontFamily: 'montserrat-regular',
     textAlign: "center",
     marginTop: 10,
   },
 
   buttonWhatsapp: {
+    alignSelf: "center",
+    fontFamily: 'montserrat-regular',
     marginTop: 2,
-    fontSize: 16,
-    color: "#F4A460",
+    fontSize: 20,
+    color: "#8c6a42",
     textDecorationLine: "underline",
   },
 });
