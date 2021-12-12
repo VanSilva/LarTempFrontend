@@ -17,8 +17,6 @@ import { CityRegister } from "../screens/City/CityRegister";
 import { CityUpdate } from "../screens/City/CityUpdate";
 import { VaccineRegister } from "../screens/Vacine/VaccineRegister";
 import { VaccineUpdate } from "../screens/Vacine/VaccineUpdate";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { View } from "react-native";
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -72,24 +70,22 @@ export function AppRoutes() {
   const { person } = useAuth();
 
   return (
-    <Drawer.Navigator initialRouteName="Feed" 
+    <Drawer.Navigator initialRouteName="Feed"
     screenOptions={{
       drawerStyle: {
-        backgroundColor: '#3C4D4C',
+        backgroundColor: "#eda75c",
         width: 240,
       },
-      headerTintColor: 'white',
+      headerTintColor: "#8c6a42",
       headerStyle: {
-        backgroundColor: '#3C4D4C',
+        backgroundColor: "#eda75c"
       }
     }}>
-      
       <Drawer.Screen name="Feed" component={Feed} />
-      <Drawer.Screen 
+      <Drawer.Screen
         name="UpdatePerson"
         component={UpdatePerson}
-        options={{ title: "Editar Perfil", drawerStyle: {},
-      }}
+        options={{ title: "Editar Perfil" }}
       />
       <Drawer.Screen
         name="DeletePerson"
