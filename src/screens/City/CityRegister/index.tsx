@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
   ToastAndroid,
+  Image,
 } from "react-native";
 import { useAuth } from "../../../contexts/auth";
 
@@ -70,20 +71,19 @@ export function CityRegister(props: IProps) {
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
+      <Image style={styles.imagem} source={require('../../../../assets/logo_animal.png')} />
         <View style={styles.formContainer}>
-          <Text style={styles.title}>Cadastro</Text>
-
           <View style={styles.inputBlock}>
-            <Text style={styles.label}>Nome</Text>
             <TextInput
               value={name}
               onChangeText={(text) => setName(text)}
+              placeholder={"Cidade"}
               style={styles.input}
             />
           </View>
 
           <TouchableOpacity style={styles.button} onPress={handleRegister}>
-            <Text style={styles.buttonText}>Cadastrar</Text>
+            <Text style={styles.buttonText}>Cadastrar Cidade</Text>
           </TouchableOpacity>
         </View>
       </View>
