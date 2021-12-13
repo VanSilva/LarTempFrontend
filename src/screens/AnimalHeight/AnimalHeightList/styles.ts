@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
   },
 
   animalHeightText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     fontSize: 30,
   },
 

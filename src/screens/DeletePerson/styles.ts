@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
   },
 
   buttonText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     color: '#5c5a5c',
     fontSize: 20,
     textAlign: "center",

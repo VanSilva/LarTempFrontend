@@ -1,5 +1,5 @@
 import React from "react";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator, DrawerContent } from "@react-navigation/drawer";
 import Feed from "../screens/Feed";
 import UpdatePerson from "../screens/UpdatePerson";
 import { SignOut } from "../screens/SignOut";
@@ -75,6 +75,11 @@ export function AppRoutes() {
       drawerStyle: {
         backgroundColor: "#eda75c",
         width: 240,
+      },
+      drawerActiveTintColor:"#8c6a42",
+      drawerLabelStyle: {
+        fontFamily: 'fuzzy-bold', 
+        color: '#8c6a42',
       },
       headerTintColor: "#8c6a42",
       headerStyle: {

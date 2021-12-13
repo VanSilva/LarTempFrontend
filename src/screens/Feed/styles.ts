@@ -51,19 +51,19 @@ export const styles = StyleSheet.create({
   },
 
   titleText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     fontWeight: "bold",
     fontSize: 22,
     width: "75%",
   },
 
   dateText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     width: "25%",
   },
 
   defaultText: {
-    fontFamily: 'montserrat-extralight',
+    fontFamily: 'fuzzy-regular',
     fontSize: 16,
   },
 
@@ -74,20 +74,20 @@ export const styles = StyleSheet.create({
   },
 
   reactionText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     marginTop: 2,
     fontSize: 12,
   },
 
   qtdText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     textAlign: "center",
     marginTop: 10,
   },
 
   buttonWhatsapp: {
     alignSelf: "center",
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     marginTop: 2,
     fontSize: 20,
     color: "#8c6a42",

@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
   },
 
   title: {
-    fontFamily: 'montserrat-extralight',
+    fontFamily: 'fuzzy-regular',
     fontSize: 25,
     textAlign: 'center',
     marginBottom: 40,
@@ -33,12 +33,12 @@ export const styles = StyleSheet.create({
   },
 
   label: {
-    fontFamily: 'montserrat-extralight',
+    fontFamily: 'fuzzy-regular',
     fontSize: 20,
   },
 
   input: {
-    fontFamily: 'montserrat-extralight',
+    fontFamily: 'fuzzy-regular',
     fontSize: 20,
     borderBottomColor: '#5c5a5c',
     borderBottomWidth: 2,
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
   },
 
   buttonText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     color: '#5c5a5c',
     fontSize: 20,
     textAlign: "center",

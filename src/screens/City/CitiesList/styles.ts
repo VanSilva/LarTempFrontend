@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   },
 
   cityText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     fontSize: 20,
   },
 
@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
   },
 
   registerButtonText: {
-    fontFamily: 'montserrat-regular',
+    fontFamily: 'fuzzy-bold',
     color: '#5c5a5c',
     fontSize: 20,
     textAlign: "center",
